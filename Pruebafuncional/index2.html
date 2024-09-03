@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Eventos - Universidad Santiago de Cali</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">USC Gestión de Eventos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Facultades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Barra de Búsqueda -->
+    <div class="container search-bar">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="Buscar eventos" aria-label="Buscar">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <select class="form-control">
+                    <option>Filtrar por Facultad</option>
+                    <option>Ingeniería</option>
+                    <option>Medicina</option>
+                    <option>Derecho</option>
+                    <option>Economía</option>
+                    <!-- Añade más opciones según las facultades disponibles -->
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control">
+                    <option>Filtrar por Tipo de Evento</option>
+                    <option>Conferencia</option>
+                    <option>Taller</option>
+                    <option>Seminario</option>
+                    <option>Charla</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control">
+                    <option>Filtrar por Fecha</option>
+                    <option>Hoy</option>
+                    <option>Esta Semana</option>
+                    <option>Este Mes</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Listado de Eventos -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">Conferencia de Ingeniería</div>
+                    <img src="https://www.usc.edu.co/wp-content/uploads/2024/08/Soy-patrocinadorUSC.webp" class="img-fluid" alt="Imagen del Evento">
+                    <div class="card-body">
+                        <h5 class="card-title">Soy patrocinador del epicentrode inversion de latinoamerica</h5>
+                        <p class="card-text">Descripción breve del evento.</p>
+                        <a href="event1.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">Taller de Medicina</div>
+                    <img src="https://www.usc.edu.co/wp-content/uploads/2024/08/861.webp" class="img-fluid" alt="Imagen del Evento">
+                    <div class="card-body">
+                        <h5 class="card-title">Taller de salud sexual y reproductiva</h5>
+                        <p class="card-text">Descripción breve del evento.</p>
+                        <a href="event2.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">Fisioterapia</div>
+                    <img src="https://www.usc.edu.co/wp-content/uploads/2024/08/887.webp" class="img-fluid" alt="Imagen del Evento">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceremonia de imposicion de batas</h5>
+                        <p class="card-text">Descripción breve del evento.</p>
+                        <a href="event3.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
